@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>星芒集盒 - 您的生活工具箱</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #6366f1;
+            --primary-dark: #4f46e5;
+        }
+        .hero-gradient {
+            background: linear-gradient(135deg, var(--primary) 0%, #8b5cf6 100%);
+        }
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+        .download-btn {
+            transition: all 0.3s ease;
+        }
+        .download-btn:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body class="font-sans antialiased text-gray-800">
+    <!-- 导航栏 -->
+    <nav class="bg-white shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0 flex items-center">
+                        <i class="fas fa-star text-indigo-600 text-2xl mr-2"></i>
+                        <span class="text-xl font-bold text-gray-900">星芒集盒</span>
+                    </div>
+                </div>
+                <div class="hidden sm:ml-6 sm:flex sm:space-x-8">
+                    <a href="#features" class="border-indigo-500 text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">功能</a>
+                    <a href="#download" class="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">下载</a>
+                    <a href="starlumina://app" class="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">打开app</a>
+                    <a href="#about" class="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">关于</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 主要内容区域 -->
+    <main>
+        <!-- 英雄区域 -->
+        <div class="hero-gradient">
+            <div class="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8 text-center">
+                <h1 class="text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl">
+                    您的生活工具箱
+                </h1>
+                <p class="mt-6 max-w-3xl mx-auto text-xl text-indigo-100">
+                    星芒集盒整合了多种实用工具，让您的生活更便捷
+                </p>
+                <div class="mt-10 flex justify-center space-x-4">
+                    <a href="#download" class="download-btn inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-white bg-opacity-20 hover:bg-opacity-30">
+                        立即下载
+                        <i class="fas fa-arrow-down ml-2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 功能区域 -->
+        <div id="features" class="py-12 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="lg:text-center">
+                    <h2 class="text-base text-indigo-600 font-semibold tracking-wide uppercase">功能特色</h2>
+                    <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+                        一站式解决多种需求
+                    </p>
+                </div>
+
+                <div class="mt-10">
+                    <div class="space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10">
+                        <!-- 功能卡片1 -->
+                        <div class="feature-card bg-white p-6 rounded-lg transition-all duration-300 text-center">
+                            <div class="flex justify-center">
+                                <div class="bg-indigo-500 text-white rounded-full p-3 -mt-8">
+                                    <i class="fas fa-tools text-xl"></i>
+                                </div>
+                            </div>
+                            <h3 class="mt-4 text-lg font-medium text-gray-900">多种实用工具</h3>
+                            <p class="mt-2 text-base text-gray-500">
+                                包含计算器、单位转换、二维码生成等日常实用工具
+                            </p>
+                        </div>
+
+                        <!-- 功能卡片2 -->
+                        <div class="feature-card bg-white p-6 rounded-lg transition-all duration-300 text-center">
+                            <div class="flex justify-center">
+                                <div class="bg-indigo-500 text-white rounded-full p-3 -mt-8">
+                                    <i class="fas fa-mobile-alt text-xl"></i>
+                                </div>
+                            </div>
+                            <h3 class="mt-4 text-lg font-medium text-gray-900">多平台支持</h3>
+                            <p class="mt-2 text-base text-gray-500">
+                                支持Windows、Android、微信小程序和支付宝小程序，随时随地使用
+                            </p>
+                        </div>
+
+                        <!-- 功能卡片3 -->
+                        <div class="feature-card bg-white p-6 rounded-lg transition-all duration-300 text-center">
+                            <div class="flex justify-center">
+                                <div class="bg-indigo-500 text-white rounded-full p-3 -mt-8">
+                                    <i class="fas fa-bolt text-xl"></i>
+                                </div>
+                            </div>
+                            <h3 class="mt-4 text-lg font-medium text-gray-900">轻量高效</h3>
+                            <p class="mt-2 text-base text-gray-500">
+                                占用资源少，运行流畅，启动快速
+                            </p>
+                        </div>
+
+                        <!-- 功能卡片4 -->
+                        <div class="feature-card bg-white p-6 rounded-lg transition-all duration-300 text-center">
+                            <div class="flex justify-center">
+                                <div class="bg-indigo-500 text-white rounded-full p-3 -mt-8">
+                                    <i class="fas fa-paint-brush text-xl"></i>
+                                </div>
+                            </div>
+                            <h3 class="mt-4 text-lg font-medium text-gray-900">简洁美观</h3>
+                            <p class="mt-2 text-base text-gray-500">
+                                现代化UI设计，操作直观，视觉舒适
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 下载区域 -->
+        <div id="download" class="py-12 bg-gray-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="lg:text-center">
+                    <h2 class="text-base text-indigo-600 font-semibold tracking-wide uppercase">下载</h2>
+                    <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+                        立即获取星芒集盒
+                    </p>
+                    <p class="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
+                        选择您的平台版本下载
+                    </p>
+                </div>
+
+                <div class="mt-10 flex flex-col sm:flex-row justify-center gap-8">
+                    <!-- 微信小程序 -->
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden w-full sm:w-80">
+                        <div class="p-6">
+                            <div class="flex items-center">
+                                <i class="fab fa-weixin text-green-500 text-4xl mr-4"></i>
+                                <div>
+                                    <h3 class="text-lg font-medium text-gray-900">微信小程序</h3>
+                                    <p class="text-sm text-gray-500">扫码立即使用</p>
+                                </div>
+                            </div>
+                            <div class="mt-6 flex justify-center">
+                                <img src="https://vip.123pan.cn/1832150722/yk6baz03t0l000d7w33fgukp7a5hjwtfDIYwDqeyDdUvDpxPAdDxDF==.jpg" alt="星芒集盒微信小程序二维码" class="w-32 h-32">
+                            </div>
+                            <div class="mt-4 text-center text-sm text-gray-500">
+                                打开微信扫一扫使用小程序
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- 支付宝小程序 -->
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden w-full sm:w-80">
+                        <div class="p-6">
+                            <div class="flex items-center">
+                                <i class="fab fa-alipay text-blue-500 text-4xl mr-4"></i>
+                                <div>
+                                    <h3 class="text-lg font-medium text-gray-900">支付宝小程序</h3>
+                                    <p class="text-sm text-gray-500">扫码立即使用</p>
+                                </div>
+                            </div>
+                            <div class="mt-6 flex justify-center">
+                                <img src="https://vip.123pan.cn/1832150722/yk6baz03t0l000d7w33fu2042htghchyDIYwDqeyDdUvDpxPAdDxDF==.jpg" alt="星芒集盒支付宝小程序二维码" class="w-32 h-32">
+                            </div>
+                            <div class="mt-4 text-center text-sm text-gray-500">
+                                打开支付宝扫一扫使用小程序
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Windows下载 -->
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden w-full sm:w-80">
+                        <div class="p-6">
+                            <div class="flex items-center">
+                                <i class="fab fa-windows text-blue-500 text-4xl mr-4"></i>
+                                <div>
+                                    <h3 class="text-lg font-medium text-gray-900">Windows版</h3>
+                                    <p class="text-sm text-gray-500">适用于Windows 10/11</p>
+                                </div>
+                            </div>
+                            <div class="mt-6">
+                                <a href="https://pan.starlumina.com/download.php?file=星芒集盒/星芒集盒.exe" class="download-btn w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-blue-600 hover:bg-blue-700">
+                                    下载
+                                    <i class="fas fa-download ml-2"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Android下载 -->
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden w-full sm:w-80">
+                        <div class="p-6">
+                            <div class="flex items-center">
+                                <i class="fab fa-android text-green-500 text-4xl mr-4"></i>
+                                <div>
+                                    <h3 class="text-lg font-medium text-gray-900">Android版</h3>
+                                    <p class="text-sm text-gray-500">适用于Android 8.0+</p>
+                                </div>
+                            </div>
+                            <div class="mt-6">
+                                <a href="https://pan.starlumina.com/download.php?file=星芒集盒/星芒集盒.apk" class="download-btn w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-green-600 hover:bg-green-700">
+                                    下载
+                                    <i class="fas fa-download ml-2"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 关于区域 -->
+        <div id="about" class="py-12 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="lg:text-center">
+                    <h2 class="text-base text-indigo-600 font-semibold tracking-wide uppercase">关于</h2>
+                    <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+                        关于星芒集盒
+                    </p>
+                </div>
+
+                <div class="mt-10 max-w-3xl mx-auto">
+                    <p class="text-lg text-gray-500">
+                        星芒集盒是一款集成了多种实用工具的生活助手软件，旨在为用户提供便捷的一站式解决方案。我们的目标是简化您的日常生活，让常用工具触手可及。
+                    </p>
+                    <p class="mt-4 text-lg text-gray-500">
+                        软件持续更新中，我们会不断添加新的实用功能。如果您有任何建议或反馈，欢迎通过邮件联系我们。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="bg-gray-800">
+        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col items-center">
+                <div class="flex items-center">
+                    <i class="fas fa-star text-indigo-400 text-2xl mr-2"></i>
+                    <span class="text-xl font-bold text-white">星芒集盒</span>
+                </div>
+                <p class="mt-4 text-base text-gray-300">
+                    您的生活工具箱
+                </p>
+                <div class="mt-8 flex flex-wrap justify-center items-center gap-x-4 gap-y-2 text-base text-gray-400">
+                    <span>© <span id="currentYear"></span> <a href="https://about.starlumina.com/" class="text-gray-400 hover:text-white" target="_blank">胡黄成霖</a> 保留所有权利.</span>
+                    <a style="color: #fff;" href="https://beian.miit.gov.cn/" class="no-underline" target="_blank">蜀ICP备2024095899号-3</a>
+                    <img class="logos" src="https://vip.123pan.cn/1832150722/ymjew503t0l000d7w32xfcwa742s0k5lDIYwDqeyDdUvDpxPAdDxDF==.png" style="height: 1em; width: auto;">
+                    <a style="color: #fff;" href="https://beian.mps.gov.cn/#/query/webSearch?code=51019002007728" class="no-underline" rel="noreferrer" target="_blank">川公网安备51019002007728号</a>
+                </div>
+                <div class="mt-6 flex justify-center space-x-6">
+                    <a href="https://www.starlumina.com/" class="text-gray-400 hover:text-white">
+                        <span class="sr-only">星芒起始页</span>
+                        <span>星芒起始页</span>
+                    </a>
+                    <a href="https://blog.starlumina.com/" class="text-gray-400 hover:text-white">
+                        <span class="sr-only">星芒博客</span>
+                        <span>星芒博客</span>
+                    </a>
+                    <a href="https://blog.starlumina.com/" class="text-gray-400 hover:text-white">
+                        <span class="sr-only">星芒工具箱</span>
+                        <span>星芒工具箱</span>
+                    </a>
+                    <a href="https://pan.starlumina.com/" class="text-gray-400 hover:text-white">
+                        <span class="sr-only">星芒下载站</span>
+                        <span>星芒下载站</span>
+                    </a>
+                </div>
+    </footer>
+
+    <script>
+        // 暗黑模式切换
+        const darkModeToggle = document.getElementById('darkModeToggle');
+        const html = document.documentElement;
+        
+        if (localStorage.getItem('darkMode') === 'true') {
+            html.classList.add('dark');
+        }
+        
+        darkModeToggle?.addEventListener('click', () => {
+            html.classList.toggle('dark');
+            localStorage.setItem('darkMode', html.classList.contains('dark'));
+        });
+
+        // 显示当前年份
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+        
+        // 平滑滚动
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
