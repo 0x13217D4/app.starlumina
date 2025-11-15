@@ -29,11 +29,11 @@
 
 ### Windows版
 - **系统要求**: Windows 10/11
-- **下载链接**: [点击下载 Windows 版](https://pan.starlumina.com/download.php?file=星芒集盒/星芒集盒.exe)
+- **下载链接**: [点击下载 Windows 版](https://github.com/0x13217D4/app.starlumina/releases/download/20251115/StarLumina.exe)
 
 ### Android版
 - **系统要求**: Android 8.0+
-- **下载链接**: [点击下载 Android 版](https://pan.starlumina.com/download.php?file=星芒集盒/星芒集盒.apk)
+- **下载链接**: [点击下载 Android 版](https://github.com/0x13217D4/app.starlumina/releases/download/20251115/StarLumina.apk)
 
 ## 🚀 快速开始
 
